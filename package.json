@@ -1,5 +1,5 @@
 {
-  "name": "three_basic",
+  "name": "basic_three_js",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,5 +13,9 @@
   },
   "dependencies": {
     "three": "^0.147.0"
-  }
+  },
+  "description": "basic of three js ",
+  "main": "main.js",
+  "author": "hamza",
+  "license": "ISC"
 }
