@@ -1,8 +1,8 @@
 
 import * as THREE from 'three';
-import { creatControls } from './system/constrols';
-import { Resizer } from './system/resize';
-import { Loop } from './system/loop';
+import { creatControls } from '../system/constrols';
+import { Resizer } from '../system/resize';
+import { Loop } from '../system/loop';
 import { MathUtils } from 'three';
 // Creat a Cals That will append to the DOM
 
@@ -209,7 +209,7 @@ class NewScen {
         const { light, ambientLight, hemislight } = creatLight();
         this.light = light;
         this.ambientLight = ambientLight;
-        this.hemislight = hemislight;
+        this.hemislight = hemislight;   
 
         this.scene.add(this.light);
         // this.scene.add(this.hemislight);
@@ -273,10 +273,6 @@ class NewScen {
         requestAnimationFrame(this.animate.bind(this));
         this.renderer.render(this.scene, this.camera);
     }
-
-
-
-
 }
 
 export { NewScen }

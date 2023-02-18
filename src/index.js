@@ -1,5 +1,7 @@
+import DayFive from "./days/five";
+import DayFour from "./days/four";
+import { NewScen } from "./days/three";
 import One from "./one";
-import { NewScen } from "./three";
 import { World } from "./world";
 
 function MainRoot() {
@@ -9,6 +11,11 @@ function MainRoot() {
     const world = new World(container);
     
     const dayThree = new NewScen();
+    
+    // Day foure 
+    const dayFour = new DayFour();
+    // day Five 
+    const dayFive = new DayFive();
     
     world.render();
 }
